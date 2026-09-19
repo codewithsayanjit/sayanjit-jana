@@ -9,7 +9,7 @@ This portfolio is designed to showcase my **skills, education, projects, experie
 ## 🌐 Live Portfolio
 
 **Portfolio:**
-https://your-domain.com
+https://sayanjit-jana-portfolio.netlify.app
 
 > Replace the URL above with your deployed portfolio URL.
 
