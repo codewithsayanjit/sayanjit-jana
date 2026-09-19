@@ -3,16 +3,13 @@ import { FaPlay, FaPause } from "react-icons/fa";
 
 const MusicPlayer = () => {
     const playlist = [
-        "/iwasneverthere.mp3",
-        "/escapism.mp3",
+        "/bgmi.mp3",
         "/blue.mp3",
-        "/YAD.mp3",
-        "/stars.mp3",
     ];
 
     const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
     const [isPlaying, setIsPlaying] = useState(false);
-    const [infoText, setInfoText] = useState("Wanna play music while scrolling?");
+    const [infoText, setInfoText] = useState("Play music?");
     const audioRef = useRef(null);
     const lastTapTime = useRef(0);
     const clickTimeout = useRef(null);
@@ -46,7 +43,7 @@ const MusicPlayer = () => {
                 p.catch(() => {
                     // If blocked, reflect paused state
                     setIsPlaying(false);
-                    setInfoText("Wanna play music while scrolling?");
+                    setInfoText("Play music?");
                 });
             }
             audio.removeEventListener("canplay", onCanPlay);
@@ -70,7 +67,7 @@ const MusicPlayer = () => {
         if (isPlayingRef.current) {
             audio.pause();
             setIsPlaying(false);
-            setInfoText("Wanna play music while scrolling?");
+            setInfoText("Play music?");
         } else {
             // Ensure current src is set correctly before playing
             setSourceAndMaybePlay(playlist[currentTrackIndex], true);

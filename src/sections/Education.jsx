@@ -31,23 +31,6 @@ const education = [
       "Computer Science and Engineering (Artificial Intelligence and Machine Learning).Currently in 2nd Year, 3rd Semester. CGPA: 7.96.",
   },
 
-  {
-    role: "Semester I",
-    company: "Adamas University",
-    duration: "2025 - 2026",
-    description:
-      "B.Tech CSE (Artificial Intelligence & Machine Learning). SGPA: 8.05. Secured A+ in Introduction to Programming.",
-  },
-
-  {
-    role: "Semester II",
-    company: "Adamas University",
-    duration: "2026 - 2027",
-    description:
-      "B.Tech CSE (Artificial Intelligence & Machine Learning). SGPA: 7.86. Secured A in Principles and Applications of AI.",
-  },
-
-
 ];
 
 // Reusable component to render each education item with animations
@@ -168,7 +151,7 @@ const Education = () => {
 
   // Dynamic scene height based on device type and number of education entries
   const SCENE_HEIGHT_VH = isMobile
-    ? 100 * education.length * 1.6
+    ? 100 * education.length * 2.2
     : 100 * education.length * 1.2;
 
   // Get scroll progress for animations

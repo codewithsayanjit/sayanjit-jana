@@ -74,7 +74,10 @@ export default function Navbar() {
       >
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <img src={Logo} alt="Logo" className="w-8 h-8" />
+          <a href="#home" aria-label="Go to home">
+            <img src={Logo} alt="Logo" className="w-8 h-8" />
+          </a>
+
           <div className="text-2xl font-bold text-white hidden sm:block">
             Sayanjit
           </div>

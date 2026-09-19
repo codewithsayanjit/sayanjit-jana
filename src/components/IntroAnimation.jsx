@@ -8,10 +8,6 @@ export default function IntroAnimation({ onFinish }) {
   const greetings = [
     "Hello",
     "I'm Sayanjit Jana",
-    "CSE Student",
-    "AI & ML Enthusiast",
-    "Building Projects",
-    "Learning. Coding. Growing.",
     "Welcome to My Portfolio",
   ];
 
